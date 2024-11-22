@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+:root{
+    --font-main: 'SUSE', sans-serif;
+}
+body{
+    font-family: var(--font-main) !important;
+}
+
+
+#containerLista{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}

@@ -1,0 +1,77 @@
+.motoboy-card {
+    text-align: center;
+    padding: 15px;
+  }
+  .motoboy-card img {
+    width: 100%;
+    height: auto;
+  }
+  .modal-header, .modal-body {
+    text-align: center;
+  }
+  .motoboy-img.mb-3{
+    width: 200px;
+    height: 150px;
+    
+  } 
+    .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  border-radius: 50%;                  
+  width: 40px;                         
+  height: 40px;
+}
+
+#esquerda,
+#direita {
+  color: #196B20 !important;
+  font-size: 45px;
+}
+
+.container1{
+    margin-top: 100px !important;
+   
+}
+.conteudo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.compromisso-cliente {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;  
+    border-radius: 8px;       
+    padding: 20px;            
+    margin-top: 20px;         
+  }
+  
+  .compromisso-cliente h3 {
+    color: #333;             
+    font-weight: bold;
+  }
+  
+  .compromisso-cliente p {
+    color: #555;             
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .compromisso-cliente ul {
+    padding-left: 20px;       
+  }
+  
+  .compromisso-cliente li {
+    margin-bottom: 10px;      
+    color: #444;
+  }
+
+  #notificarBtn{
+    background-color:#196B20!important; 
+    color: goldenrod;
+    border: none;
+  }
+
+#notificarBtn:hover{
+    background-color:goldenrod!important; 
+    color: #196B20;        border: none;
+}

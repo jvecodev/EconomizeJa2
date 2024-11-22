@@ -1,0 +1,319 @@
+/* Reset e configuração básica */
+
+@font-face {
+    font-family: 'Fonte'; /* Nome da fonte personalizada */
+    src: url('') format('truetype'); /* escolher e apagar o conteudo de fonts */
+}
+
+:root{
+    --font-main: 'Fonte', sans-serif; 
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-main) !important; 
+    
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: url(../images/img-backgroundmain.png) no-repeat center center fixed;
+    background-size: cover;
+    overflow: auto;
+}
+
+#nav{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top : 0;	
+    background-color: rgb(248, 248, 248) !important;   
+}
+
+main {
+    height: 95%; 
+    position: relative;
+    margin-top: 100px;
+}
+
+section {    
+    position: relative;
+}
+
+.container.mt-4 {
+    width: 350px;
+    height: 130px;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 10px;
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.btn.btn-primary.ms-2 {
+    background-color: #196B20;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    background: #ffffff00;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background-color: #196B20;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #97A6A0;
+}
+
+/* Estilo para o botão primário */
+.bi.bi-list {
+    background-color: transparent;
+    color: black;
+    border: none;
+    border-radius: 0px;
+    font-size: 2rem;
+}
+
+.bi.bi-menu-button-wide:hover {
+    scale: 1.05;
+    transition: 0.3s;
+}
+
+/* Seções específicas */
+.position-relative.overflow-hidden.p-3.p-md-5.m-md-3.text-center.bg-body-tertiary {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.row .justify-content-center {
+    justify-content: center !important;
+    margin-bottom: 200px;
+}
+
+.container.my-7{
+    border-radius: 10px;
+}
+
+#quem-somos{
+    margin-bottom: 200px;
+}
+
+.sede {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;   
+}
+
+.map-container{
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    margin: 0px;
+}
+
+.sede {
+    margin-bottom: 200px;
+}
+
+.imgSede{
+    width: 50%;
+    border-radius: 10px;
+    margin: 0px;
+    padding: 0%;
+}
+
+.imgSede img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 0px;
+    padding: 0%;
+}
+
+.footer {
+    color: white;
+    padding: 30px;
+    text-align: center;
+    bottom: 0;
+    background-image: url(../images/kitchen.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.footer > .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #00000000;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    background-color: #00000000;
+}
+hr.hr {
+    border: 1px solid #ffffff;
+    width: 100%;
+}
+.container > h1 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding: 10px;
+    font-weight: lighter;
+}
+
+.bi.bi-geo-alt-fill {
+    color: rgb(255, 0, 0);
+    font-size: 2rem;
+}
+
+
+.contato {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+.autoria{
+    display: flex;
+    align-items: space-around;
+    gap: 5px;
+    margin-top: 50px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.autoria > p{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.autoria a {
+    color: #007009;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: 0.5s;
+}
+
+.autoria a:hover {
+    color: #ffffff;
+}
+
+.footer > .container > .sugestoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    width: 100%;
+    margin-top: 55px;
+}
+
+.footer > .container > .sugestoes > input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.footer > .container > .sugestoes > button{
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: #196B20;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.footer > .container > .sugestoes > button:hover{
+    background-color: rgb(255, 255, 255);
+    transition:cubic-bezier(0.165, 0.84, 0.44, 1);
+    color: rgb(0, 0, 0);
+}
+
+.avaliacao{
+    display: flex;
+    margin-left: 190px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.avaliacao h3{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.stars {
+    display: inline-block;
+}
+
+.stars input[type="radio"] {
+    display: none;
+}
+
+.stars label {
+    font-size: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.stars input[type="radio"]:checked ~ label {
+    color: gold;
+}
+
+.stars label:hover,
+.stars label:hover ~ label {
+    color: gold;
+}
+
+#thankYouMessage {
+    display: none;
+    font-size: 18px;
+    color: #ffdb3a;
+}
+
+.redes{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

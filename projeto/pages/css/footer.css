@@ -1,0 +1,42 @@
+.autoria {
+    display: inline-block; /* Para alinhamento horizontal */
+    margin: 10px;
+}
+
+.redes a {
+    color: #fff; /* Ícones brancos */
+    margin: 0 10px; /* Espaçamento entre os ícones */
+}
+
+.redes a:hover {
+    color: #f0a500; /* Cor dos ícones ao passar o mouse */
+}
+
+input.sugestoes {
+    width: 50px;
+    height: 50px;
+}
+
+.hr {
+    border: 1px solid #f0a500; /* Linha de separação */
+    margin: 20px 0;
+}
+
+aside.avaliacao {
+    text-align: center; /* Centraliza o conteúdo do aside */
+    margin: 20px 0; /* Margem superior e inferior para espaçamento */
+}
+
+button#btnSugestion.btn.btn-primary {
+    width: 50px;
+    height: 45px;
+    color: #f0a500; /* Corrigido para incluir o '#' na cor */
+}
+
+/* Adicionando centralização para o aside de avaliação */
+.avalie-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+}

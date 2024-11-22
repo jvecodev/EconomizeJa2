@@ -1,0 +1,312 @@
+
+/* Reset e configuração básica */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+:root{
+    --font-main: 'SUSE', sans-serif;
+}
+
+
+
+body {
+    background: url(../images/img-backgroundmain.png) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    font-family: var(--font-main) !important;
+    
+}
+#nav{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top : 0;	
+    background-color: rgb(248, 248, 248) !important;
+    
+}
+
+.mb-4 {
+    margin-top: 5rem !important;
+    margin-bottom: 1rem !important;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    background: #ffffff;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background-color: #196B20;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #97A6A0;
+}
+
+.text-center.py-5.bg-primary.text-white {
+   margin-top: 7rem;
+   background-color: #196b20a2 !important;
+   
+}
+
+.btn.btn-primary{
+    background-color: #196b20a2 !important;    
+    border: none;
+}
+
+.btn.btn-primary:hover{
+    background-color: #196b20 !important;
+    transition: 0.5s;
+}
+
+/* Estilo para o botão primário */
+.bi.bi-menu-button-wide {
+    background-color: transparent;
+    color: black;
+    border: none;
+    border-radius: 0px;
+    font-size: 2rem;
+    
+}
+
+.bi.bi-menu-button-wide:hover {
+    scale: 1.05;
+    transition: 0.3s;
+}
+
+/* Seções específicas */
+.position-relative.overflow-hidden.p-3.p-md-5.m-md-3.text-center.bg-body-tertiary {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.row .justify-content-center {
+    justify-content: center !important;
+    margin-bottom: 200px;
+}
+
+footer > .container.text-center{
+    
+    padding: 1rem;
+}
+.container.text-center a{
+    color: #ffffff;
+    background-color: #196B20;
+    border: #196B20 1px solid;
+    text-decoration: none;
+    margin-left: 20px; 
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.container.text-center a:hover{
+    background-color: white;
+    color: #196B20;
+    transition:cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+
+.footer{  
+    color: white;
+    padding: 30px;
+    text-align: center;
+    bottom: 0;
+    background-image: url(../images/kitchen.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    z-index: 100;
+}
+    
+.card {
+    overflow: hidden; /* Garante que a imagem não ultrapasse o contêiner */
+}
+
+.card-img-top {
+    width: 70%; /* Ajuste a porcentagem conforme o espaço desejado */
+    margin: 0 auto;
+    display: block;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.footer > .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #00000000;
+}
+
+hr.hr{
+    border: 1px solid #ffffff;
+    width: 100%;
+}
+.container > h1{
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding: 10px;
+    
+    font-weight: lighter;
+   
+
+}
+
+.bi.bi-geo-alt-fill{
+    color: rgb(255, 0, 0);
+    font-size: 2rem;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    background-color: #00000000;
+}
+.contato {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    width: 100%;
+    
+    
+}
+.autoria{
+    display: flex;
+    align-items: space-around;
+    gap: 5px;
+    margin-top: 50px;
+    width: 100%;
+    flex-direction: column;
+   
+}
+.autoria > p{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.autoria  a {
+    color: #007009;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: 0.5s;
+
+}
+
+.autoria  a:hover {
+    color: #ffffff;
+    
+}
+.footer > .container > .sugestoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    width: 100%;
+    margin-top: 55px;
+}
+.footer > .container > .sugestoes > input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 10px;
+    
+}
+.footer > .container > .sugestoes > button{
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: #196B20;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.footer > .container > .sugestoes > button:hover{
+    background-color: rgb(255, 255, 255);
+    transition:cubic-bezier(0.165, 0.84, 0.44, 1);
+   
+    color: rgb(0, 0, 0);
+}
+
+.avaliacao{
+    
+    display: flex;
+    margin-left: 190px;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.avaliacao h3{
+    
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.stars {
+    display: inline-block;
+  }
+
+  .stars input[type="radio"] {
+    display: none;
+  }
+
+  .stars label {
+    font-size: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  .stars input[type="radio"]:checked ~ label {
+    color: gold;
+  }
+
+  .stars label:hover,
+  .stars label:hover ~ label {
+    color: gold;
+  }
+
+  #thankYouMessage {
+    display: none;
+    font-size: 18px;
+    color: #ffdb3a;
+  }
+
+.redes{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+    
+
+

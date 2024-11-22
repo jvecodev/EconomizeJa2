@@ -1,0 +1,231 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden !important;
+}
+
+body {
+    overflow: hidden;
+}
+
+.col-lg-8 {
+    font-size: 1rem;
+}
+
+
+.logo-img {
+    width: 40px; 
+}
+
+.nav-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+ul.nav.me-auto {
+    margin-right: 0 !important;
+}
+
+ul.nav.me-auto.nav-center {
+    padding: 10px;
+}
+
+a.nav-link.link-dark.px-2 {
+    color: black !important;
+    font-size: 1.2rem;
+    font-weight: 100;
+    transition: 1s;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+a.nav-link.link-dark.px-2:hover {
+    color: white !important;
+    background-color: black;
+    transition: 1s;
+}
+
+.nav-register {
+    display: flex;
+    margin-left: 400px;
+    justify-content: center;
+}
+
+.nav-register .registros a {
+    border: 1px solid black;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.btn.btn-primary {
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 0px;
+    background-color: #000;
+}
+
+.btn.btn-primary:hover {
+    margin-left: 10px;
+    color: #000;
+    border: 1px solid #000;
+    background-color: #fff;
+    transition: 1s;
+}
+
+.p-md-5 {
+    /* padding: 3rem !important; */
+}
+
+nav.py-2.bg.bg-light.border-bottom {
+    padding-bottom: 0px !important;
+}
+
+dmriv.position-relative,overflow-hidden.p-3.p-nd-5.m-md-3.text-center.bg-body-tertiary {
+    background-color: transparent !important;
+}
+
+section#quem-somos {
+    background: linear-gradient(to bottom, #d0f0c0, #a0d6a8);
+    padding: 4rem 0;
+    height: 100%;
+}
+
+section#quem-somos .text-muted {
+    color: #333; 
+    font-size: 1rem;
+}
+
+section#quem-somos .btn {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid #000;
+    border-radius: 0; 
+    background-color: #000;
+    color: #fff; 
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+section#quem-somos .btn:hover {
+    background-color: #fff; 
+    color: #000; 
+}
+
+@media (max-width: 768px) {
+    section#quem-somos {
+        padding: 2rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-register {
+        display: none;
+    }
+    
+    .container.d-flex.flex-wrap {
+        display: none;
+    }
+
+    .nav-item.dropdown {
+        display: none;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .nav-item:first-child {
+        display: block;
+    }
+
+    .col-md-6.p-lg-5.mx-auto.my-5 {
+        margin-top: 10rem !important;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .nav-register {
+        display: none;
+    }
+
+    .col-md-6.p-lg-5.mx-auto.my-5 {
+        margin-top: 5rem !important;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .nav-register {
+        display: flex;
+    }
+    
+    .container.d-flex.flex-wrap {
+        display: flex;
+    }
+
+    .nav-item {
+        display: list-item;
+    }
+
+    .btn.btn-primary {
+        display: none;
+    }
+
+    .col-md-6.p-lg-5.mx-auto.my-5 {
+        margin-top: 6.75rem !important;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1667px) {
+    .d-flex.gap-3.justify-content-center.lead.fw-normal {
+        display: flex;
+        text-align: center;
+    }
+
+    .col-md-6.p-lg-5.mx-auto.my-5 {
+        margin-top: 8rem !important;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 1400px) {
+    .col-md-6.p-lg-5.mx-auto.my-5 {
+        margin-top: 8rem !important;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav-register {
+        display: none;
+    }
+
+    .btn.btn-primary {
+        display: block;
+    }
+
+    .offcanvas {
+        display: block;
+    }
+}

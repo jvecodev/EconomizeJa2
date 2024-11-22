@@ -1,0 +1,129 @@
+/* Estilo do contêiner do carrinho */
+#carrinhoContainer {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+/* Estilo do card do produto */
+.produto-card {
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+/* Estilo da imagem do produto */
+.produto-imagem {
+    flex: 1;
+    width: 100%; /* A imagem vai ocupar toda a largura da div */
+    height: auto;
+    max-width: 225px; /* Limita a largura máxima da imagem */
+    max-height: 300px; /* Limita a altura máxima da imagem */
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.produto-imagem img {
+    width: 100%; /* A imagem vai ocupar toda a largura da div */
+    height: 100%; /* A altura será 100% da altura disponível na div */
+    object-fit: cover; /* A imagem será recortada proporcionalmente */
+    border-radius: 8px;
+}
+
+/* Estilo das informações do produto */
+.produto-informacoes {
+    flex: 2;
+    overflow: hidden; /* Impede que o texto ultrapasse os limites do card */
+}
+
+/* Nome do produto */
+.produto-nome {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Descrição e preço */
+.produto-descricao {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.produto-preco {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2d6a4f;
+    margin-bottom: 10px;
+}
+
+/* Estilo da quantidade */
+.produto-quantidade {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Estilo do input de quantidade */
+.input-quantidade {
+    width: 80px;
+    margin-right: 10px;
+}
+
+/* Estilo para a área de botões */
+.produto-botoes {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+/* Botões */
+.produto-botoes button {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+/* Alinhamento dos botões */
+.produto-botoes button.btn-danger {
+    background-color: #e63946;
+    border-color: #e63946;
+}
+
+.produto-botoes button.btn-primary {
+    background-color: #457b9d;
+    border-color: #457b9d;
+}
+
+.produto-botoes button.btn-success {
+    background-color: #2a9d8f;
+    border-color: #2a9d8f;
+}
+
+/* Estilo do botão de excluir */
+.produto-botoes button i {
+    font-size: 1.2rem;
+}
+
+/* Escondendo o input de quantidade */
+.d-none {
+    display: none;
+}

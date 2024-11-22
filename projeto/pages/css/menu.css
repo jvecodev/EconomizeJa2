@@ -1,0 +1,273 @@
+/* Reset e configuração básica */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.carrinho  {
+    font-size: 2rem;
+    color: rgb(0, 0, 0) !important;
+    text-decoration: none ;
+}
+.carrinho:hover{
+    color: #196B20 !important;
+    transition: 0.5s;
+}
+
+/* Estilo para a navegação */
+.logo-img {
+    width: 40px; 
+}
+
+.logo-img:hover{
+    scale: 1.05;
+    transition: 0.5s;
+}
+.bi.bi-person-circle{
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    text-decoration: none ;
+}
+ a.bi.bi-person-circle:hover{
+    color: #196B20;
+    transition: 0.5s;
+    
+    
+}
+
+.nav-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+ul.nav.me-auto {
+    margin-right: 0 !important;
+}
+
+ul.nav.me-auto.nav-center {
+    padding: 10px;
+}
+
+a.nav-link.link-dark.px-2 {
+    color: black !important;
+    font-size: 1.2rem;
+    font-weight: 100;
+    transition: 1s;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+a.nav-link.link-dark.px-2:hover {
+    color: white !important;
+    background-color: black;
+    transition:cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.nav-register {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-register .registros a {
+    border: 1px solid black;
+    color: #fff;
+    margin-left: 10px;
+    
+}
+
+.bi.bi-list {
+    background-color: transparent;
+    color: black;
+    border: none;
+    border-radius: 0px;
+    font-size: 2rem;
+}
+
+nav.py-2.bg.bg-light.border-bottom {
+    padding-bottom: 0px !important;
+}
+
+.position-relative.overflow-hidden.p-3.p-md-5.m-md-3.text-center.bg-body-tertiary {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.row .justify-content-center {
+    justify-content: center !important;
+    margin-bottom: 200px;
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .nav-register {
+        display: none;
+    }
+
+    .col-md-6.p-lg-5.mx-auto.my-5 {
+        margin-top: 5rem !important;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .nav-register {
+        display: flex;
+    }
+
+    .container.d-flex.flex-wrap {
+        display: flex;
+    }
+
+    .nav-item {
+        display: list-item;
+    }
+
+    .bi.bi-list {
+        display: none;
+    }
+
+    .col-md-6.p-lg-5.mx-auto.my-5 {
+        margin-top: 6.75rem !important;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1667px) {
+    .d-flex.gap-3.justify-content-center.lead.fw-normal {
+        display: flex;
+        text-align: center;
+    }
+
+    .col-md-6.p-lg-5.mx-auto.my-5 {
+        margin-top: 8rem !important;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 1400px) {
+    .col-md-6.p-lg-5.mx-auto.my-5 {
+        margin-top: 8rem !important;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #icones {
+        display: flex;
+        justify-content: center;
+        margin-left: 0%;
+    }
+
+    .nav-register {
+        display: flex;
+    }
+
+   
+    .bi.bi-list {
+        display: none;
+    }
+   
+
+    .offcanvas {
+        display: block;
+    }
+}
+/* 760 ate 1260 */                
+
+@media screen and (min-width: 760px) and (max-width: 1260px) {
+    .nav-register {
+        display: none;
+    }
+
+    .bi.bi-list {
+        display:  block;
+    }
+
+
+    .offcanvas .nav .nav-item {
+        display: block;
+        margin: 5px 0; 
+    }
+
+    .nav-register {
+        display: flex;
+    }
+
+    .col-md-6.p-lg-5.mx-auto.my-5 {
+        margin-top: 10rem !important;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+    
+}
+
+@media (max-width: 1280px) {
+    .col-md-6.p-lg-5.mx-auto.my-5 {
+        margin-top: 8rem !important;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav-register {
+        display: flex;
+    }
+
+    .bi.bi-list {
+        display: none;
+    }
+
+    .offcanvas {
+        display: block;
+    }
+
+}
+
+/* Media query para telas menores que 760px */
+@media (max-width: 990px) {
+    .nav-item {
+        display: none;
+    }
+    .nav-register {
+        display: none;
+    }
+
+    .bi.bi-list {
+        display: block;
+    }
+
+    .nav-item:first-child {
+        display: block;
+    }
+
+    .offcanvas .nav .nav-item {
+        display: block;
+        margin: 5px 0; 
+    }
+
+    .col-md-6.p-lg-5.mx-auto.my-5 {
+        margin-top: 10rem !important;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
