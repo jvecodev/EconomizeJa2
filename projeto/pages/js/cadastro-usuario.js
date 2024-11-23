@@ -65,24 +65,27 @@ function salvarUsuarioLocalStorage(usuario) {
 }
 
 function enviarUsuarioParaAPI(usuario) {
-    fetch("/api/usuarios", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify(usuario),
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log("Usuário cadastrado com sucesso:", data);
-        enviarEmailParaUsuario(usuario.email);
-        window.open("login.html", "_blank");
-    })
-    .catch(error => {
-        console.error("Erro ao cadastrar o usuário:", error);
-        alert("Ocorreu um erro ao cadastrar o usuário.");
-    });
+  fetch("/api/usuarios", {
+      method: "POST",
+      headers: {
+          "Content-Type": "application/json",
+      },
+      body: JSON.stringify(usuario),
+  })
+  .then(response => response.json())
+  .then(data => {
+      console.log("Usuário cadastrado com sucesso:", data);
+      enviarEmailParaUsuario(usuario.email);
+
+      // Redirecionamento após cadastro
+      window.open("login.html", "_blank");
+  })
+  .catch(error => {
+      console.error("Erro ao cadastrar o usuário:", error);
+      alert("Ocorreu um erro ao cadastrar o usuário.");
+  });
 }
+
 
 function enviarEmailParaUsuario(email) {
     fetch('/api/sendEmail', {

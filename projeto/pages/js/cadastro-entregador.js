@@ -38,22 +38,6 @@ function cadastrarMotoboy() {
         }
 }
 
-// function enviarEmailParaMotoboy(email) {
-//     fetch('/api/sendEmail', {
-//         method: 'POST',
-//         headers: {
-//             'Content-Type': 'application/json',
-//         },
-//         body: JSON.stringify({
-//             email: email,
-//             subject: 'Bem-vindo!',
-//             text: 'Obrigado por se cadastrar!',
-//         }),
-//     })
-//     .then(response => response.json())
-//     .then(data => console.log(data.message))
-//     .catch(error => console.error('Erro ao enviar e-mail:', error));
-// }
 
 function carrregarMotoboys() {
     const motoboys = JSON.parse(localStorage.getItem('motoboys'));

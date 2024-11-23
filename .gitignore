@@ -1,6 +1,5 @@
 node_modules
 .idea
-
 .vercel
 projeto/.env
 .env
