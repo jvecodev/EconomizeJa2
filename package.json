@@ -4,7 +4,8 @@
   "description": "EconomizeJa é uma aplicação web sendo desenvolvida com o objetivo de reduzir o desperdício de alimentos. Nosso projeto conecta consumidores a supermercados, restaurantes e outros estabelecimentos que desejam vender produtos próximos do vencimento, com pequenos defeitos - tudo isso com preços reduzidos. O projeto beneficia tanto os consumidores quanto os estabelecimentos, criando uma solução prática e consciente. <br>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "vercel-build": "npx prisma migrate deploy"
   },
   "keywords": [],
   "author": "",
