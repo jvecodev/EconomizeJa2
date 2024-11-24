@@ -1,20 +1,15 @@
 {
-    "name": "projeto",
     "version": 2,
     "builds": [
       {
-        "src": "home.js",
+        "src": "./home.js",
         "use": "@vercel/node"
       }
     ],
     "routes": [
       {
-        "src": "/(.*)", 
-        "dest": "/home.js" 
-      },
-      {
-        "src": "/(.*)", 
-        "dest": "/home.js"
+        "src": "/(.*)",
+        "dest": "/"
       }
     ]
-  }
+}
