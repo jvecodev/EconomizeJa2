@@ -1,14 +1,15 @@
 {
   "version": "2",
   "name": "projeto",
-  "builds": 
-    {
-      "src": "home.js",
-      "use": "@vercel/node"
-    },
-  "routes": 
-    {
-      "src": "/(.*)",
-      "dest": "/home.js"
-    }
+  "builds": {
+    "src": "home.js",
+    "use": "@vercel/node"
+  },
+  "routes": {
+    "src": "/(.*)",
+    "dest": "/home.js"
+  },
+  "dependencies": {
+    "require": "^2.4.20"
+  }
 }
