@@ -1,4 +1,4 @@
-const send = require("../../home");
+
 
 // Função para mostrar o formulário correspondente ao tipo
 function mostrarFormulario(tipo) {
